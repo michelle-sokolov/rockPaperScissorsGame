@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<header>
+    <center>
+    <h1>ROCK, PAPER, SCISSORS!</h1><br>
+    <h4>Click an image to start your game.</h4>
+</center>
+</header>
+<body>
+<div id="score"></div>  
+<center> 
+<input type="image" value="rock" id='pic' onclick="submit(this)"src="https://imgur.com/j7jS4Fg.png">
+<input type="image" value="paper" id='pic' onclick="submit(this)"src="https://imgur.com/BM6BesP.png">
+<input type="image" value="scissors" id='pic' onclick="submit(this)"src="https://imgur.com/HsBnSOk.png">
+</center>
+<br>
+<div id="hands">
+<img src='https://imgur.com/CgbX2cF.png' />
+<img src='https://imgur.com/ubirxyE.png' />
+</div>
+
+<img id="rockLeft" src="https://imgur.com/CgbX2cF.png" style="display:none;" width="200" height="200" />
+<img id="paperLeft" src="https://imgur.com/zOte5tn.png" style="display:none;" width="200" height="200"/>
+<img id="scissorsLeft" src="https://imgur.com/0BtiLNp.png" style="display:none;" width="200" height="200"/>
+
+<img id="rockRight" src="https://imgur.com/ubirxyE.png" style="display:none;" width="200" height="200"/>
+<img id="paperRight" src="https://imgur.com/ZqDl6jz.png" style="display:none;" width="200" height="200"/>
+<img id="scissorsRight" src="https://imgur.com/42tEluV.png" style="display:none;" width="200" height="200"/>
+
+
+<div id="outcome"></div>  
+</body>
+<script src="app.js"></script> 
+</html>
